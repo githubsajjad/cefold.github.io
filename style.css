@@ -1,0 +1,353 @@
+/* preloader css */
+
+.page-loader {
+    background: #333;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9998;
+}
+
+.loader {
+    background: #7CD8AB;
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    text-indent: -9999em;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+    animation: ball-scale 1s 0s ease-in-out infinite;
+}
+
+@-webkit-keyframes ball-scale {
+
+    0% {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+@keyframes ball-scale {
+
+    0% {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+/* preloader css end */
+
+/*Google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+
+/* Css reset code */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section_padding {
+    padding: 100px 0;
+}
+
+.section_title {
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.section_title h3 {
+    font-size: 44px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section_title h3 span {
+    font-weight: 600;
+}
+
+.effect {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.effect:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: #292929;
+}
+
+.effect:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 50%;
+    height: 3px;
+    background: #7CD8AB;
+}
+
+
+.section_title p {
+    font-size: 13px;
+    color: #575757;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.spt0 {
+    padding-top: 0;
+}
+
+.responsive_mobile_menu .slicknav_menu {
+    display: none;
+}
+
+/* Css reset code end */
+
+/* banner css start */
+
+section.banner_area {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(assets/img/banner.jpg);
+    position: relative;
+}
+
+section.banner_area:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: .75;
+}
+
+section.banner_area h1 {
+    font-size: 44px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 58px;
+    font-weight: 700;
+}
+
+section.banner_area h1 span {
+    color: #7CD8AB;
+}
+
+section.banner_area a {
+    padding: 12px 40px;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background: #7CD8AB;
+    border-radius: 40px;
+    margin-top: 30px;
+    transition: .4s;
+}
+
+section.banner_area a:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* banner css end*/
+
+/* demo content css start */
+
+.single_demo {
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 31px -8px #333;
+}
+
+.single_demo h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.single_demo h4 a {
+    color: #333;
+    transition: .4s;
+}
+
+.single_demo h4 a:hover {
+    color: #7CD8AB;
+}
+
+.single_demo a.demo {
+    display: block;
+    height: 400px;
+    background-color: #666;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center top;
+}
+
+.single_demo a.demo_bg1 {
+    background-image: url(assets/img/home_one.jpg);
+}
+
+.single_demo a.demo_bg2 {
+    background-image: url(assets/img/home_two.jpg);
+}
+
+.single_demo a.demo_bg3 {
+    background-image: url(assets/img/home_three.jpg);
+}
+
+.single_demo a.demo_bg4 {
+    background-image: url(assets/img/home_four.jpg);
+}
+
+.single_demo a.demo_bg5 {
+    background-image: url(assets/img/single_blog.jpg);
+}
+
+.single_demo a.demo_bg6 {
+    background-image: url(assets/img/blog_detail.jpg);
+}
+
+.single_demo a.demo_bg7 {
+    background-image: url(assets/img/error_page.jpg);
+}
+
+/* demo content css end*/
+
+/* footer area css start */
+
+footer.footer_area {
+    padding: 70px 0;
+    background-color: #333;
+}
+
+.footer_area .social_icons {
+    margin-bottom: 30px;
+}
+
+.footer_area .social_icons a {
+    display: inline-block;
+    margin: 3px;
+    transition: .4s;
+    border: 2px solid #7CD8AB;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.footer_area .social_icons a:hover {
+    background-color: #7CD8AB;
+    border: 2px solid transparent;
+}
+
+.footer_area p.footer_text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.footer_area p.footer_text a {
+    color: #7CD8AB;
+    display: inline-block;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+/* footer area css end */
